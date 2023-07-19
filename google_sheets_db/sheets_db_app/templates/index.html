@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rupicard User Data Form</title>
+</head>
+<body>
+    <form method="post" action="{% url 'save_user_data' %}">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Prafull Ranjan"><br><br>
+
+        <label for="mobile_number">Mobile Number:</label>
+        <input type="text" id="mobile_number" name="mobile_number" required placeholder="7366832105"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
